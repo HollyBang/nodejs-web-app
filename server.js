@@ -2,7 +2,7 @@ const http = require('http');
 
 const { public, home, search, notFound } = require('./routes');
 
-
+var port = process.env.PORT || 5000;
 http.createServer((req, res) => {
   if (req.url.match(/\.(html|css|js|png)$/)) {
     public(req, res);
@@ -13,4 +13,4 @@ http.createServer((req, res) => {
   } else {
     notFound(req, res);
   }
-}).listen(3000, () => console.log('server working'));
+}).listen(port);
