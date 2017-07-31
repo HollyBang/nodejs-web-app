@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/app.css">
+        <title>{{title}} - OMDB</title>
+    </head>
+
+    <body id="movie">
+        <div class="card">
+            <div class="card-media">
+                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{poster_path}}" alt="Poster_title" />
+            </div>
+            
+            <div class="card-content">
+                <h1 class="card-title">{{title}}</h1>
+                <div>
+                    <small>{{release_date}}</small> &bull;
+                    <small>{{original_title}}</small> &bull;
+                    <small>{{vote_count}}</small> &bull;
+                    <small>{{vote_average}}/10</small>
+                </div>
+                <p>{{overview}}</p>
+                <a href="#" target="_blank">Подробнее</a>
+            </div>
+        </div>
+    </body>
+</html>
